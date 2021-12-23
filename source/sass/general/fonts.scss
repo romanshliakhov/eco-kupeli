@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "RobotoCondensed";
-  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
-       url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-family: "TTNorms";
+  src: url("../fonts/TTNorms-Regular.woff2") format("woff2"),
+       url("../fonts/TTNorms-Regular.woff") format("woff");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -9,9 +9,37 @@
 
 @font-face {
   font-family: "RobotoCondensed";
-  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
-       url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  src: url("../fonts/TTNorms-Medium.woff2") format("woff2"),
+       url("../fonts/TTNorms-Medium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTNorms";
+  src: url("../fonts/TTNorms-Medium.woff2") format("woff2"),
+       url("../fonts/TTNorms-Medium.woff") format("woff");
   font-display: swap;
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Athelas";
+  src: url("../fonts/Athelas-Regular.woff2") format("woff2"),
+       url("../fonts/Athelas-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Colus";
+  src: url("../fonts/Colus-Regular.woff2") format("woff2"),
+       url("../fonts/Colus-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+

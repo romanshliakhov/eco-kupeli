@@ -85,8 +85,27 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+// .wrapper {
+//   max-width: 1600px;
+//   width: 100%;
+//   margin: 0 auto;
+// }
+
 main {
+  overflow-x: hidden;
   background: linear-gradient(115.53deg, #434343 4.45%, #000000 98.08%);
+}
+
+h1 {
+  font-family: "Colus", sans-serif;
+  font-size: 100px;
+  line-height: 125px;
+  text-align: center;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(180deg, #F9F9F9 0%, #B5B8C1 100%);
+
 }
 
 h2 {
@@ -108,6 +127,7 @@ h3 {
 }
 
 .btn {
+  display: block;
   background: linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%);
   box-shadow: 4px 4px 30px rgba(42, 46, 56, 0.25);
   border-radius: 19px;

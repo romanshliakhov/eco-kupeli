@@ -16,19 +16,23 @@
 
   &__slider-wrapper {
     margin-top: 43px;
-    background-color: #EFF1F6;
-    border-radius: 35px;
-    box-shadow: 16px 18px 10px 4px rgba(58, 59, 61, 0.9);
-    width: 1046px;
-    height: 527px;
+    width: 1170px;
+    position: relative;
   }
 
-  &__slider {
-    position: relative;
+  &__slider-wrapp {
     overflow: hidden;
     width: 1046px;
     height: 527px;
     border-radius: 35px;
+    margin: 0 auto;
+    background-color: #EFF1F6;
+    border-radius: 35px;
+    box-shadow: 16px 18px 10px 4px rgba(58, 59, 61, 0.9);
+  }
+
+  &__slider {
+    position: relative;
   }
 
   .swiper-slide {
@@ -36,6 +40,25 @@
     width: 1046px;
     height: 527px;
     border-radius: 35px;
+  }
+
+  .swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='31' height='50' viewBox='0 0 31 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath opacity='0.5' d='M27.3956 49.5004L29.9254 46.9956C30.2633 46.6618 30.4316 46.2773 30.4316 45.8427C30.4316 45.409 30.2633 45.0247 29.9254 44.691L10.0379 25.0003L29.9249 5.31045C30.2627 4.9765 30.4311 4.5922 30.4311 4.15805C30.4311 3.72373 30.2627 3.33943 29.9249 3.00566L27.3949 0.501177C27.0578 0.166708 26.6696 0 26.2309 0C25.7926 0 25.4044 0.167235 25.0673 0.501177L1.48545 23.8479C1.14815 24.1816 0.979588 24.5661 0.979588 25.0003C0.979588 25.4344 1.14815 25.8182 1.48545 26.1518L25.0673 49.5004C25.4046 49.8342 25.7928 50 26.2309 50C26.6696 50 27.0578 49.8342 27.3956 49.5004Z' fill='url(%23paint0_linear_250_723)'/%3e%3cdefs%3e%3clinearGradient id='paint0_linear_250_723' x1='39.6923' y1='4.88411' x2='-18.8518' y2='26.7758' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%23E6E9F0'/%3e%3cstop offset='0.510417' stop-color='%23FCFDFF'/%3e%3cstop offset='1' stop-color='%23E6E9F0'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+
+  .swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='30' height='50' viewBox='0 0 30 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath opacity='0.5' d='M3.48722 0.499596L0.957386 3.00443C0.619555 3.3382 0.451172 3.72268 0.451172 4.15735C0.451172 4.59097 0.619555 4.97527 0.957386 5.30904L20.8449 24.9997L0.957918 44.6896C0.620087 45.0235 0.451703 45.4078 0.451703 45.8419C0.451703 46.2763 0.620087 46.6606 0.957918 46.9943L3.48792 49.4988C3.82505 49.8333 4.21321 50 4.6519 50C5.09023 50 5.4784 49.8328 5.81552 49.4988L29.3974 26.1521C29.7347 25.8184 29.9032 25.4339 29.9032 24.9997C29.9032 24.5656 29.7347 24.1818 29.3974 23.8482L5.81552 0.499596C5.47822 0.165828 5.09005 0 4.6519 0C4.21321 0 3.82505 0.165828 3.48722 0.499596Z' fill='url(%23paint0_linear_250_707)'/%3e%3cdefs%3e%3clinearGradient id='paint0_linear_250_707' x1='-8.80953' y1='45.1159' x2='49.7347' y2='23.2242' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%23E6E9F0'/%3e%3cstop offset='0.510417' stop-color='%23FCFDFF'/%3e%3cstop offset='1' stop-color='%23E6E9F0'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
   }
 
   .swiper-pagination {

@@ -1,21 +1,72 @@
 .portfolio {
   margin-top: 100px;
 
+  &__wrapper {
+    position: relative;
+  }
 
   &__slider {
     margin-top: 28px;
     overflow: hidden;
-    clip-path: url();
+    filter: drop-shadow(0px 4px 169px rgba(164, 77, 252, 0.15));
   }
 
   .swiper-slide {
     position: relative;
     width: 1127px;
     height: 880px;
+
   }
 
   .swiper-slide__img {
     object-fit: cover;
     object-position: center;
+
   }
+}
+
+
+.custom-shape-divider-top-1640343898 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+.custom-shape-divider-top-1640343898 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1640343898 .shape-fill {
+  fill: #000000;
+}
+
+.custom-shape-divider-bottom-1640344373 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1640344373 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1640344373 .shape-fill {
+  fill: #000000;
 }

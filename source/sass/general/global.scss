@@ -48,7 +48,8 @@ p {
 }
 
 ul,
-li {
+li,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -92,7 +93,6 @@ input[type="search"]::-webkit-search-results-decoration {
 // }
 
 main {
-  overflow-x: hidden;
   background: linear-gradient(115.53deg, #434343 4.45%, #000000 98.08%);
 }
 

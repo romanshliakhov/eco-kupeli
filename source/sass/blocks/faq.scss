@@ -1,0 +1,34 @@
+.faq {
+  max-width: 580px;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 400;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(147.59deg, #E6E9F0 -15.44%, #FCFDFF 55.3%, #E6E9F0 123.15%);
+  }
+
+  &__list {
+    margin-top: 75px;
+
+    li + li {
+      margin-top: 20px;
+    }
+  }
+
+  &__list-item {
+    list-style-type: decimal;
+    padding-left: 10px;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  &__copyright {
+    margin-top: 45px;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+  }
+}

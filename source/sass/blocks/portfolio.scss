@@ -1,0 +1,21 @@
+.portfolio {
+  margin-top: 100px;
+
+
+  &__slider {
+    margin-top: 28px;
+    height: 880px;
+    overflow: hidden;
+    clip-path: url();
+  }
+
+  .swiper-slide {
+    position: relative;
+    width: 1127px;
+  }
+
+  .swiper-slide__img {
+    object-fit: cover;
+    object-position: center;
+  }
+}

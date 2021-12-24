@@ -86,12 +86,6 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-// .wrapper {
-//   max-width: 1600px;
-//   width: 100%;
-//   margin: 0 auto;
-// }
-
 main {
   background: linear-gradient(115.53deg, #434343 4.45%, #000000 98.08%);
 }
@@ -133,4 +127,15 @@ h3 {
   border-radius: 19px;
   font-family: inherit;
   color: #000;
+}
+
+.descr {
+  margin-bottom: 43px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%);
+  text-align: center;
 }

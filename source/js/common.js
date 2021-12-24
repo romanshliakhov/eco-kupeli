@@ -1,8 +1,29 @@
-let swiper = new Swiper('.portfolio__slider', {
+let swiperPortfolio = new Swiper('.portfolio__slider', {
   centeredSlides: true,
   slidesPerView: 'auto',
   loop: true,
 });
+
+let swiperReadyDots = ['серия стандарт', 'серия премиум', 'серия люкс'];
+
+let swiperReady = new Swiper('.ready__slider', {
+  slidesPerView: '1',
+  loop: true,
+  touchRatio: 0,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  pagination: {
+    el: '.ready__slider-nav',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (swiperReadyDots[index]) + '</span>';
+    },
+  },
+});
+
+
 
 // imput Mask
 let selector = document.querySelectorAll('input[type="tel"]');

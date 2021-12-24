@@ -30,11 +30,34 @@
 
   &__item {
     width: 302px;
-    height: 97px;
+    min-height: 97px;
     margin-bottom: 45px;
     background: linear-gradient(124.39deg, #FDFDFD -10.77%, #E9E9E9 142.5%);
     box-shadow: -6px -6px 8px rgba(248, 248, 248, 0.5), 7px 6px 15px rgba(0, 0, 0, 0.13);
     border-radius: 6px;
+    position: relative;
+    padding: 8px;
+    text-align: right;
+  }
+
+  &__item-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  &__item-title {
+    min-height: 56px;
   }
 
   &__btns {

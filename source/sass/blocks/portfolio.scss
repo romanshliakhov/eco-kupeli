@@ -4,7 +4,6 @@
 
   &__slider {
     margin-top: 28px;
-    height: 880px;
     overflow: hidden;
     clip-path: url();
   }
@@ -12,6 +11,7 @@
   .swiper-slide {
     position: relative;
     width: 1127px;
+    height: 880px;
   }
 
   .swiper-slide__img {

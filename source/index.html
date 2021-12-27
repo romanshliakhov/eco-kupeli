@@ -505,11 +505,11 @@
         <h2 class="collect__subtitle">собери свою купель</h2>
         <div class="descr">индивидуальная сборка под ключ</div>
 
-        <div class="collect__box">
+        <!-- <div class="collect__box">
           <button class="collect__cancel">x сбросить</button>
 
-          <div class="collect__items">
-            <div class="collect__item">
+          <div class="collect__items" id="choose">
+            <div class="collect__item active" data-value="70000">
               <div class="collect__item-image">
                 <picture>
                   <source type='image/webp' srcset='img/items/item1.webp'>
@@ -520,11 +520,11 @@
               <div class="collect__item-info">
                 <div class="collect__item-title">Чаша Купели</div>
 
-                <div class="collect__item-price">70.000₽</div>
-              </div>
+                <div class="collect__item-price">70.000₽</div>              </div>
+
             </div>
 
-            <div class="collect__item">
+            <div class="collect__item" data-value="8000">
               <div class="collect__item-info">
                 <div class="collect__item-title">Утепление<br> чаши</div>
 
@@ -532,7 +532,7 @@
               </div>
             </div>
 
-            <div class="collect__item">
+            <div class="collect__item" data-value="52000">
               <div class="collect__item-image">
                 <picture>
                   <source type='image/webp' srcset='img/items/item3.webp'>
@@ -547,7 +547,7 @@
               </div>
             </div>
 
-            <div class="collect__item">
+            <div class="collect__item" data-value="30000">
               <div class="collect__item-image">
                 <picture>
                   <source type='image/webp' srcset='img/items/item4.webp'>
@@ -562,7 +562,7 @@
               </div>
             </div>
 
-            <div class="collect__item">
+            <div class="collect__item" data-value="5000">
               <div class="collect__item-image">
                 <picture>
                   <source type='image/webp' srcset='img/items/item5.webp'>
@@ -577,7 +577,7 @@
               </div>
             </div>
 
-            <div class="collect__item">
+            <div class="collect__item" data-value="6000">
               <div class="collect__item-image">
                 <picture>
                   <source type='image/webp' srcset='img/items/item6.webp'>
@@ -592,7 +592,7 @@
               </div>
             </div>
 
-            <div class="collect__item">
+            <div class="collect__item" data-value="5000">
               <div class="collect__item-info">
                 <div class="collect__item-title">Подстаканники</div>
 
@@ -600,7 +600,7 @@
               </div>
             </div>
 
-            <div class="collect__item">
+            <div class="collect__item" data-value="15000">
               <div class="collect__item-image">
                 <picture>
                   <source type='image/webp' srcset='img/items/item8.webp'>
@@ -615,7 +615,7 @@
               </div>
             </div>
 
-            <div class="collect__item">
+            <div class="collect__item" data-value="30000">
               <div class="collect__item-image">
                 <picture>
                   <source type='image/webp' srcset='img/items/item9.webp'>
@@ -630,7 +630,7 @@
               </div>
             </div>
 
-            <div class="collect__item">
+            <div class="collect__item" data-value="4000">
               <div class="collect__item-image">
                 <picture>
                   <source type='image/webp' srcset='img/items/item10.webp'>
@@ -645,7 +645,7 @@
               </div>
             </div>
 
-            <div class="collect__item">
+            <div class="collect__item" data-value="27000">
               <div class="collect__item-image">
                 <picture>
                   <source type='image/webp' srcset='img/items/item11.webp'>
@@ -660,7 +660,7 @@
               </div>
             </div>
 
-            <div class="collect__item">
+            <div class="collect__item" data-value="3000">
               <div class="collect__item-image">
                 <picture>
                   <source type='image/webp' srcset='img/items/item12.webp'>
@@ -677,7 +677,42 @@
           </div>
 
           <div class="collect__btns">
-            <div class="collect__btn btn">ОБЩАЯ СТОИМОСТЬ: <span> 70.000р</span> </div>
+            <div class="collect__btn btn">ОБЩАЯ СТОИМОСТЬ: <span id="total">0</span> &#8381; </div>
+            <button class="collect__btn continue btn">Продолжить</button>
+          </div>
+        </div> -->
+
+
+        <div class="collect__box ">
+          <button class="collect__cancel calc__btn-reset">x сбросить</button>
+
+          <div class="collect__items calc">
+            <div class="collect__item calc__btn active" data-value="70000">70000</div>
+
+            <div class="collect__item calc__btn" data-value="8000">8000</div>
+
+            <div class="collect__item calc__btn" data-value="52000">52000</div>
+
+            <div class="collect__item calc__btn" data-value="30000">30000</div>
+
+            <div class="collect__item calc__btn" data-value="5000">5000</div>
+
+            <div class="collect__item calc__btn" data-value="6000">6000</div>
+
+            <div class="collect__item calc__btn" data-value="5000">5000</div>
+
+            <div class="collect__item calc__btn" data-value="15000">15000</div>
+
+            <div class="collect__item calc__btn" data-value="30000">30000</div>
+
+            <div class="collect__item calc__btn" data-value="4000">4000</div>
+
+            <div class="collect__item calc__btn" data-value="27000">27000</div>
+
+            <div class="collect__item calc__btn" data-value="3000">3000</div>
+
+          <div class="collect__btns">
+            <div class="collect__btn btn">ОБЩАЯ СТОИМОСТЬ: <span class="calc__result" id="result">0</span> &#8381; </div>
             <button class="collect__btn continue btn">Продолжить</button>
           </div>
         </div>

@@ -104,6 +104,18 @@ validateForms('.form', { tel: {required: true} }, '.thanks-popup', 'send goal');
 const calc = document.querySelector('.calc');
 const result = document.querySelector('#result');
 
+let itemsPrice = calc.querySelectorAll('.collect__item');
+
+itemsPrice.forEach((el) => {
+  el.addEventListener('click', function () {
+    if (this.classList.contains('active')) {
+      this.classList.remove('active');
+    } else {
+      this.classList.add('active');
+    }
+  });
+});
+
 calc.addEventListener('click', function (event) {
   if (!event.target.classList.contains('calc__btn')) return;
 

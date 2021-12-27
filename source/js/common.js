@@ -59,67 +59,9 @@ validateForms('.form', { tel: {required: true} }, '.thanks-popup', 'send goal');
 
 
 // Калькулятор выбранных товаров
-
-// const calc = document.querySelector('.calc');
-// let result = document.querySelector('#result');
-// const itemsPrice = calc.querySelectorAll('.collect__item');
-
-
-// function sum() {
-
-// let value;
-
-//   itemsPrice.forEach((el) => {
-//     el.addEventListener('click', function () {
-//       if (this.classList.contains('active')) {
-//         this.classList.remove('active');
-//       } else {
-//         this.classList.add('active');
-
-//         value = +this.dataset.value;
-//       }
-//     });
-//   });
-//   return value;
-
-// }
-
-// let www = sum();
-
-// console.log(www);
-
-// // result.innerText = www;
-
-// var 2
-
-// const calc = document.querySelector('.calc');
-// const fullPrice = document.querySelector('#result');
-// let itemsPrice = calc.querySelectorAll('.collect__item');
-// let price = 0;
-
-// itemsPrice.forEach((el) => {
-//   el.addEventListener('click', function () {
-//     if (this.classList.contains('active')) {
-//       this.classList.remove('active');
-//     } else {
-//       this.classList.add('active');
-//     }
-//   });
-// });
-
-
-// calc.addEventListener('click', function (event) {
-//   const value = +event.target.dataset.value;
-
-//   console.log(event.target);
-//   // console.log(value);
-
-//   fullPrice.innerText = value;
-// });
-
-
 const calc = document.querySelector('.calc');
 const fullPrice = document.querySelector('#result');
+const cancelFullPrice = document.querySelector('#reset');
 let itemsPrice = calc.querySelectorAll('.collect__item');
 let price = 0;
 
@@ -132,8 +74,7 @@ const priceWithoutSpaces = (str) => {
 };
 
 const normalPrice = (str) => {
-	// return String(str).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
-  return String(str);
+	return String(str).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
 };
 
 const plusFullPrice = (currentPrice) => {
@@ -144,6 +85,8 @@ const minusFullPrice = (currentPrice) => {
 	return price -= currentPrice;
 };
 
+const resetPrice = () => price = 0;
+
 const printFullPrice = () => {
 	fullPrice.textContent = `${normalPrice(price)} ₽`;
 };
@@ -152,26 +95,37 @@ const printFullPrice = () => {
 
 itemsPrice.forEach((el) => {
   el.closest('.collect__item').setAttribute('data-id', randomId);
-  el.addEventListener('click', function (e) {
-    if (this.classList.contains('active')) {
-      this.classList.remove('active');
-    } else {
-      this.classList.add('active');
-    }
 
+
+  el.addEventListener('click', function (e) {
     let self = e.currentTarget;
     let parent = self.closest('.collect__item');
-    // let priceNumber = parseInt(priceWithoutSpaces(parent.querySelector('.collect__item-price').textContent));
-    let priceNumber = parseInt(parent.querySelector('.collect__item-price').textContent);
-    console.log(priceNumber);
+    let rawPrice = parent.querySelector('.collect__item-price').textContent;
 
-    plusFullPrice(priceNumber);
+    let priceNumber = parseInt(rawPrice.match(/\d*/gi).join(''), 10);
 
-		printFullPrice();
+    if (parent.classList.contains('active')) {
+      parent.classList.remove('active');
+
+      minusFullPrice(priceNumber);
+      printFullPrice();
+    } else {
+      parent.classList.add('active');
+
+      plusFullPrice(priceNumber);
+      printFullPrice();
+    }
   });
 });
 
 
+cancelFullPrice.addEventListener('click', function(e) {
+  itemsPrice.forEach((el) => {
+    el.classList.remove("active");
+  });
 
+  resetPrice();
+  printFullPrice();
+});
 
 

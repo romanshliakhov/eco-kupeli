@@ -60,85 +60,118 @@ validateForms('.form', { tel: {required: true} }, '.thanks-popup', 'send goal');
 
 // Калькулятор выбранных товаров
 
-// let chooseItems = document.querySelector('#choose');
-// let totalPrice = document.querySelector('#total');
+// const calc = document.querySelector('.calc');
+// let result = document.querySelector('#result');
+// const itemsPrice = calc.querySelectorAll('.collect__item');
 
-// let itemsPrice = [...chooseItems.querySelectorAll('.collect__item')];
-// // console.log("itemsPrice :>> ", itemsPrice);
+
+// function sum() {
+
+// let value;
+
+//   itemsPrice.forEach((el) => {
+//     el.addEventListener('click', function () {
+//       if (this.classList.contains('active')) {
+//         this.classList.remove('active');
+//       } else {
+//         this.classList.add('active');
+
+//         value = +this.dataset.value;
+//       }
+//     });
+//   });
+//   return value;
+
+// }
+
+// let www = sum();
+
+// console.log(www);
+
+// // result.innerText = www;
+
+// var 2
+
+// const calc = document.querySelector('.calc');
+// const fullPrice = document.querySelector('#result');
+// let itemsPrice = calc.querySelectorAll('.collect__item');
+// let price = 0;
 
 // itemsPrice.forEach((el) => {
-//   // console.log("el :>> ", el);
-
 //   el.addEventListener('click', function () {
 //     if (this.classList.contains('active')) {
 //       this.classList.remove('active');
 //     } else {
 //       this.classList.add('active');
 //     }
-
-//     let activeItems = getActiveItems(chooseItems);
-//     let sum = sumPrice(activeItems);
-//     showTotalSum(sum, totalPrice);
 //   });
 // });
 
-// function getActiveItems (chooseItems) {
-//   return [...chooseItems.querySelectorAll('.collect__item.active')];
-// }
 
-// function sumPrice (items) {
-//   let sum = 0;
+// calc.addEventListener('click', function (event) {
+//   const value = +event.target.dataset.value;
 
-//   for ( let i = 0; i < items.lenght; i++) {
-//     sum += Number(items[i].innerHTML);
-//   }
+//   console.log(event.target);
+//   // console.log(value);
 
-//   return sum;
-// }
-
-// function showTotalSum (sum, elem) {
-//   elem.innerHTML = sum;
-// }
+//   fullPrice.innerText = value;
+// });
 
 
 const calc = document.querySelector('.calc');
-const result = document.querySelector('#result');
-
+const fullPrice = document.querySelector('#result');
 let itemsPrice = calc.querySelectorAll('.collect__item');
+let price = 0;
+
+const randomId = () => {
+	return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+};
+
+const priceWithoutSpaces = (str) => {
+	return str.replace(/\s/g, '');
+};
+
+const normalPrice = (str) => {
+	// return String(str).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+  return String(str);
+};
+
+const plusFullPrice = (currentPrice) => {
+	return price += currentPrice;
+};
+
+const minusFullPrice = (currentPrice) => {
+	return price -= currentPrice;
+};
+
+const printFullPrice = () => {
+	fullPrice.textContent = `${normalPrice(price)} ₽`;
+};
+
+
 
 itemsPrice.forEach((el) => {
-  el.addEventListener('click', function () {
+  el.closest('.collect__item').setAttribute('data-id', randomId);
+  el.addEventListener('click', function (e) {
     if (this.classList.contains('active')) {
       this.classList.remove('active');
     } else {
       this.classList.add('active');
     }
+
+    let self = e.currentTarget;
+    let parent = self.closest('.collect__item');
+    // let priceNumber = parseInt(priceWithoutSpaces(parent.querySelector('.collect__item-price').textContent));
+    let priceNumber = parseInt(parent.querySelector('.collect__item-price').textContent);
+    console.log(priceNumber);
+
+    plusFullPrice(priceNumber);
+
+		printFullPrice();
   });
 });
 
-calc.addEventListener('click', function (event) {
-  if (!event.target.classList.contains('calc__btn')) return;
-
-  // const value = this.getAttribute("data-value");
-
-  const value = event.target.innerText;
-  // const value = this.target.dataset;
-
-  // switch(value) {
-  //   case 'C':
-  //     result.innerText = '';
-  //     break;
-
-  //   case '=':
-  //     result.innerText = eval(result.innerText);
-  //     break;
-
-  //   default:
-  //     result.innerText += value ;
-  // }
 
 
-  console.log(value);
 
-  result.innerText = value;
-});
+

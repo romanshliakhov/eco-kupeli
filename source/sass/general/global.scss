@@ -89,6 +89,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 main {
   background: linear-gradient(115.53deg, #434343 4.45%, #000000 98.08%);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -125,7 +126,6 @@ h3 {
   background: linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%);
   box-shadow: 4px 4px 30px rgba(42, 46, 56, 0.25);
   border-radius: 19px;
-
   color: #000;
 }
 

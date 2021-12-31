@@ -63,6 +63,11 @@
                 </svg>
               <p class="main__number-text">опыта работы</p>
             </div>
+            <a class="main__video-btn" href="#">
+              <svg  width='50' height='50'>
+                <use href='img/sprite/sprite.svg#arrow'></use>
+              </svg>
+            </a>
             <div class="main__number">
               <svg width="129" height="70" viewBox="0 0 129 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M48.2 50.2C46.4214 52.3362 44.2269 54.0884 41.75 55.35C39.368 56.3742 36.792 56.8689 34.2 56.8H21.2L30.5 46.3C36.1 40.0333 39.8167 35.1167 41.65 31.55C43.4667 28.0431 44.41 24.1495 44.4 20.2C44.4 14.3333 42.4667 9.56668 38.6 5.90001C34.7333 2.23335 29.6333 0.400014 23.3 0.400014C17.6446 0.387214 12.0406 1.47404 6.8 3.60001L3.9 18.9L4.1 19C7.97333 13.6 13.1067 10.9 19.5 10.9C22.4342 10.7842 25.2999 11.8051 27.5 13.75C29.5667 15.65 30.5667 18.4333 30.5 22.1C30.3469 25.1897 29.4368 28.1945 27.85 30.85C25.0772 35.3961 21.9862 39.7403 18.6 43.85L0 67.6V67.9H30.3C35.2739 67.8239 40.2483 68.0242 45.2 68.5L48.4 50.3L48.2 50.2Z" fill="url(#paint0_linear_233_686)"/>
@@ -90,17 +95,6 @@
             </div>
           </div>
           <button class="main__btn btn">Подобрать купель</button>
-        </div>
-
-        <div class="main__video">
-          <!-- <video class="main__video-item" preload="metadata" poster="video/preload.png" controls loop >
-            <source src="video/andriy.mp4" type="video/mp4">
-          </video> -->
-          <!-- <a class="main__video-btn" href="#">
-            <svg  width='50' height='50'>
-              <use href='img/sprite/sprite.svg#arrow'></use>
-            </svg> -->
-          </a>
         </div>
       </section>
 
@@ -225,10 +219,12 @@
           </div>
 
           <div class="features__descr">
-            <picture>
-              <source type='image/webp' srcset='img/features-black.webp'>
-              <img class='features__image' width='100' height='100' src='img/features-black.png' alt='Черный купель'>
-            </picture>
+            <div class="features__descr-image">
+              <picture>
+                <source type='image/webp' srcset='img/features-black.webp'>
+                <img class='features__image' width='100' height='100' src='img/features-black.png' alt='Черный купель'>
+              </picture>
+            </div>
 
             <div class="features__descr-info">
               <ul class="features__descr-list">
@@ -862,6 +858,12 @@
 
           <div class="portfolio__wave-bottom">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="linear" gradientUnits="userSpaceOnUse">
+                 <stop style="stop-color:#434343;" offset="4.45"/>
+                 <stop style="stop-color:#000000;stop-opacity:0;" offset="98.08"/>
+                </linearGradient>
+               </defs>
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="portfolio__wave-fill"></path>
             </svg>
           </div>

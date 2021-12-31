@@ -1,5 +1,5 @@
 .form {
-  width: 501px;
+  max-width: 501px;
 
   &__title {
     margin-bottom: 50px;
@@ -35,6 +35,10 @@
   &__socials {
     display: flex;
     justify-content: space-between;
+
+    li + li {
+      margin-left: 20px;
+    }
   }
 
   &__socials-item {

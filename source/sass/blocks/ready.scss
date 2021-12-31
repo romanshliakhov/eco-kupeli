@@ -16,14 +16,14 @@
 
   &__slider-wrapper {
     margin-top: 43px;
-    width: 1170px;
+    max-width: 1170px;
     position: relative;
   }
 
   &__slider-wrapp {
     overflow: hidden;
-    width: 1046px;
-    height: 527px;
+    max-width: 1046px;
+    min-height: 527px;
     border-radius: 35px;
     margin: 0 auto;
     background-color: #EFF1F6;
@@ -38,8 +38,8 @@
 
   .swiper-slide {
     position: relative;
-    width: 1046px;
-    height: 527px;
+    max-width: 1046px;
+    min-height: 527px;
     border-radius: 35px;
   }
 
@@ -258,5 +258,5 @@
   display: none;
 }
 
-
+шт
 

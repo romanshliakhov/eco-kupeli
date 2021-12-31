@@ -1,6 +1,81 @@
 @media  (max-width: 1400px) {
-  .container {
-    
+  .features__descr {
+    justify-content: space-between;
+  }
+
+  .features__descr-info {
+    margin-left: 0;
+    padding-right: 20px;
+  }
+}
+
+@media  (max-width: 1240px) {
+  .features__info-lists {
+    padding: 0 15px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .features__btn {
+    padding: 40px 15px;
+  }
+
+  .features__descr-item {
+    font-size: 32px;
+  }
+
+  .ready__slider-box {
+    padding: 0 20px;
+  }
+
+  .collect {
+    padding: 50px 25px 100px;
+  }
+
+  .bid {
+    padding: 40px 20px 130px;
+  }
+
+  .faq {
+    max-width: 440px;
+  }
+
+  .portfolio .swiper-slide {
+    height: 640px;
+  }
+
+  h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .features__descr-image {
+    width: 40%;
+  }
+
+  .features__info-main + .features__parts  {
+    margin-left: 20px;
+  }
+
+  .features__edge {
+    padding: 0 30px;
+  }
+
+  .extra__left-text,
+  .extra__right-text {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .extra__right-product,
+  .extra__left-product {
+    font-size: 40px;
+    line-height: 42px;
+
+    span {
+      font-size: 42px;
+      line-height: 48px;
+    }
   }
 }
 

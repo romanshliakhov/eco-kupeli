@@ -23,7 +23,7 @@
 
   &__wave-top {
     position: absolute;
-    top: -1px;
+    top: -2px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -55,9 +55,11 @@
   }
 
   &__wave-fill {
-    fill: linear-gradient(115.53deg, #434343 4.45%, #000000 98.08%);
+    fill: #1E1E1E;
+    opacity: 1;
   }
 }
+
 
 
 

@@ -2,6 +2,11 @@ let swiperPortfolio = new Swiper('.portfolio__slider', {
   centeredSlides: true,
   slidesPerView: 'auto',
   loop: true,
+  breakpoints: {
+    1200: {
+      slidesPerView: 1,
+    }
+  }
 });
 
 let swiperReadyDots = ['серия стандарт', 'серия премиум', 'серия люкс'];

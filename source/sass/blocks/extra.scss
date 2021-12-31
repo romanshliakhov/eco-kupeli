@@ -7,7 +7,7 @@
 
   &__left {
     position: relative;
-    width: 900px;
+    max-width: 900px;
     height: 805px;
   }
 
@@ -47,7 +47,7 @@
   &__left-product {
     position: absolute;
     text-align: left;
-    width: 290px;
+    max-width: 290px;
     right: 30px;
     padding-top: 120px;
     padding-right: 30px;

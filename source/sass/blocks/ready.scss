@@ -6,12 +6,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    // position: relative;
   }
 
   &__slider-nav {
     display: flex;
     height: 58px;
+
   }
 
   &__slider-wrapper {
@@ -21,6 +22,7 @@
   }
 
   &__slider-wrapp {
+    position: relative;
     overflow: hidden;
     max-width: 1046px;
     min-height: 527px;
@@ -35,7 +37,6 @@
     position: relative;
   }
 
-
   .swiper-slide {
     position: relative;
     max-width: 1046px;
@@ -48,6 +49,7 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
+    left: -55px;
   }
 
   .swiper-button-next {
@@ -55,6 +57,7 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
+    right: -55px;
   }
 
   .swiper-button-next::after,
@@ -119,6 +122,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 25px;
+    position: relative;
   }
 
   &__info-left {
@@ -245,6 +249,7 @@
 }
 
 .ready__item-image {
+  // display: none;
   position: relative;
   height: 250px;
   width: 445px;
@@ -254,8 +259,53 @@
   position: absolute;
 }
 
-.ready__item-radio {
+.ready__radio-color,
+.ready__radio-material {
   display: none;
 }
 
+
+.radio-1:checked ~ .ready__info-right > .ready__colors > .ready__product > .ready__product-type--blue {
+  border: 5px solid #000;
+}
+
+.radio-2:checked ~ .ready__info-right > .ready__colors > .ready__product > .ready__product-type--white {
+  border: 5px solid #000;
+}
+
+.radio-3:checked ~ .ready__info-right > .ready__colors > .ready__product > .ready__product-type--grey {
+  border: 5px solid #000;
+}
+
+.radio-4:checked ~ .ready__info-right > .ready__materials > .ready__product > .ready__product-type--pasilandr {
+  border: 5px solid #000;
+}
+
+.radio-5:checked ~ .ready__info-right > .ready__materials > .ready__product > .ready__product-type--list {
+  border: 5px solid #000;
+}
+
+.radio-6:checked ~ .ready__info-right > .ready__materials > .ready__product > .ready__product-type--white-three {
+  border: 5px solid #000;
+}
+
+.radio-7:checked ~ .ready__info-right > .ready__materials > .ready__product > .ready__product-type--granit {
+  border: 5px solid #000;
+}
+
+.ready__image {
+  display: none;
+}
+
+.radio-1:checked ~ .ready__info-left > .ready__item-image > .ready__image-box > .blue-granit {
+  display: block;
+}
+
+.radio-2:checked ~ .ready__info-left > .ready__item-image > .ready__image-box > .white-standart {
+  display: block;
+}
+
+.radio-3:checked ~ .ready__info-left > .ready__item-image > .ready__image-box > .grey-standart {
+  display: block;
+}
 

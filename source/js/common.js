@@ -134,3 +134,16 @@ cancelFullPrice.addEventListener('click', function(e) {
 });
 
 
+//
+const allRadio = document.querySelectorAll('.ready__info');
+
+allRadio.forEach(radio => {
+  radio.addEventListener('change', function (e) {
+    const activeColVal = document.querySelector('.ready__radio-color:checked').value,
+          activeMatVal = document.querySelector('.ready__radio-color:checked').value,
+          photo = document.querySelector('.ready__item-image');
+    if (activeColVal == 'blue-standart' && activeMatVal == 'palisandr-standart') {
+      photo.scr = 'img/products/blue-granit.png';
+    }
+  });
+});

@@ -78,11 +78,6 @@
     }
   }
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none;
-  }
-
   .extra {
     margin-top: 70px;
     min-height: 800px;
@@ -125,8 +120,15 @@
   .continue {
     margin-left: 20px;
   }
-}
 
+  .ready {
+    padding: 0 65px;
+  }
+
+  .collect__box {
+    padding: 25px 10px 45px;
+  }
+}
 
 @media  (max-width: 1100px) {
   .bid__inner {
@@ -197,13 +199,135 @@
 
   .extra {
     flex-direction: column;
+    width: 100%;
+    margin-bottom: 75px;
   }
 
-  .extra__left {
+  .extra__left-bg {
+    left: -50%;
+    width: 1200px;
+  }
+
+  .extra__left-product {
+    padding-top: 50px;
+    right: 0;
+  }
+
+  .extra__right {
     width: 100%;
+  }
+
+  .extra__right-bg {
+    right: -170px;
+  }
+
+  .extra__pipe {
+    bottom: -70px;
+    left: 50%;
+  }
+
+  .extra__pipe img {
+    height: 380px;
+    width: 235px;
+  }
+}
+
+@media  (max-width: 1024px) {
+  .collect__box {
+    padding: 25px 40px 45px;
+  }
+
+  .extra__pipe {
+    left: 45%;
+  }
+}
+
+@media  (max-width: 920px) {
+  .extra__pipe {
+    left: 40%;
+  }
+}
+
+@media  (max-width: 845px) {
+  .extra__pipe {
+    left: 30%;
   }
 }
 
 
+@media  (max-width: 768px) {
+  .extra__pipe {
+    left: 25%;
+  }
+
+  .header__logo {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .header__contact {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .main {
+    min-height: 330px;
+  }
+
+  .main__subtitle {
+    margin-top: 40px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  h1 {
+    font-size: 41px;
+    line-height: 51px;
+  }
+
+  .main__numbers {
+    margin-top: 25px;
+    max-width: 330px;
+  }
+
+  .main__btn {
+    margin-top: 30px;
+    font-size: 11px;
+    line-height: 12px;
+    padding: 15px 24px;
+
+  }
+
+  .main__number svg {
+    width: 63px;
+    height: 30px;
+  }
+
+  .main__number-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .main__video-btn {
+    width: 55px;
+    height: 55px;
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+@media  (max-width: 680px) {
+  .extra__pipe {
+    left: 20%;
+  }
+}
+
+@media  (max-width: 575px) {
+  .extra__pipe {
+    left: 0%;
+  }
+}
 
 

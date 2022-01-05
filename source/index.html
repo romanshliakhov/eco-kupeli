@@ -245,400 +245,401 @@
         <h2 class="ready__subtitle">готовые решения</h2>
         <div class="descr">такие купели чаще других бывают в наличии. сегодня заказал- завтра купель у тебя</div>
 
-        <div class="ready__slider-box">
-          <div class="ready__slider-nav"></div>
+        <div class="ready__inner">
+          <div class="ready__tabs tabs">
+            <ul class="ready__tabs-list tabs__list">
+              <li class="ready__tabs-item tabs__item"><button class="ready__tabs-btn tabs__btn tabs__btn--active" data-tabs-path="standart">серия стандарт</button></li>
+              <li class="ready__tabs-item tabs__item"><button class="ready__tabs-btn tabs__btn" data-tabs-path="premium">серия премиум</button></li>
+              <li class="ready__tabs-item tabs__item"><button class="ready__tabs-btn tabs__btn" data-tabs-path="lux">серия люкс</button></li>
+            </ul>
 
-          <div class="ready__slider-wrapper">
-            <div class="ready__slider-wrapp">
-              <div class="ready__slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="ready__slider-content">
-                      <div class="ready__price btn">145.000₽</div>
-                      <form class="ready__info">
-                        <input class="ready__radio-color radio-1" name="colors" id="blue-standart" type="radio">
-                        <input class="ready__radio-color  radio-2" name="colors" id="white-standart" type="radio" checked>
-                        <input class="ready__radio-color  radio-3" name="colors" id="grey-standart" type="radio">
-                        <input class="ready__radio-material radio-4" name="material" id="palisandr-standart" type="radio">
-                        <input class="ready__radio-material radio-5" name="material" id="list-standart" type="radio">
-                        <input class="ready__radio-material radio-6" name="material" id="wood-standart" type="radio" checked>
-                        <input class="ready__radio-material radio-7" name="material" id="granit-standart" type="radio">
+            <div class="ready__tabs__content tabs__content tabs__content--active" data-tabs-target="standart">
+              <div class="ready__slider-content">
+                <div class="ready__price btn">145.000₽</div>
+                <form class="ready__info">
+                  <input class="ready__radio-color radio-1" name="colors" id="blue-standart" type="radio">
+                  <input class="ready__radio-color  radio-2" name="colors" id="white-standart" type="radio" checked>
+                  <input class="ready__radio-color  radio-3" name="colors" id="grey-standart" type="radio">
+                  <input class="ready__radio-material radio-4" name="material" id="palisandr-standart" type="radio">
+                  <input class="ready__radio-material radio-5" name="material" id="list-standart" type="radio">
+                  <input class="ready__radio-material radio-6" name="material" id="wood-standart" type="radio" checked>
+                  <input class="ready__radio-material radio-7" name="material" id="granit-standart" type="radio">
 
 
-                        <div class="ready__info-left">
-                          <div class="ready__info-details">
-                            <div class="ready__info-title">Серия Стандарт</div>
-                            <p class="ready__info-descr">Ничего лишнего. Только самые необходимые компоненты в комплектации:<br> Печь, Купель с обшивкой из лиственницы, крышка-тент, лесенка</p>
-                          </div>
+                  <div class="ready__info-left">
+                    <div class="ready__info-details">
+                      <div class="ready__info-title">Серия Стандарт</div>
+                      <p class="ready__info-descr">Ничего лишнего. Только самые необходимые компоненты в комплектации:<br> Печь, Купель с обшивкой из лиственницы, крышка-тент, лесенка</p>
+                    </div>
 
-                          <div class="ready__item-image">
-                            <div class="ready__image-box">
-                              <div class="ready__image blue-granit">
-                                <img src="img/products/blue-granit.png" alt="blue-granit">
-                              </div>
-                              <div class="ready__image blue-list">
-                                <img src="img/products/blue-list.png" alt="blue-list">
-                              </div>
-                              <div class="ready__image blue-palisandr">
-                                <img src="img/products/blue-palisandr.png" alt="blue-palisandr">
-                              </div>
-                              <div class="ready__image blue-wood">
-                                <img src="img/products/blue-wood.png" alt="blue-wood">
-                              </div>
-                              <div class="ready__image grey-granit">
-                                <img src="img/products/grey-granit.png" alt="grey-granit">
-                              </div>
-                              <div class="ready__image grey-list">
-                                <img src="img/products/grey-list.png" alt="grey-list">
-                              </div>
-                              <div class="ready__image grey-palisandr">
-                                <img src="img/products/grey-palisandr.png" alt="grey-palisandr">
-                              </div>
-                              <div class="ready__image grey-wood">
-                                <img src="img/products/grey-wood.png" alt="grey-wood">
-                              </div>
-                              <div class="ready__image white-granit">
-                                <img src="img/products/white-granit.png" alt="white-granit">
-                              </div>
-                              <div class="ready__image white-list">
-                                <img src="img/products/white-list.png" alt="white-list">
-                              </div>
-                              <div class="ready__image white-palisandr">
-                                <img src="img/products/white-palisandr.png" alt="white-palisandr">
-                              </div>
-                              <div class="ready__image white-wood">
-                                <img src="img/products/white-wood.png" alt="white-wood">
-                              </div>
-                            </div>
-                          </div>
+                    <div class="ready__item-image">
+                      <div class="ready__image-box">
+                        <div class="ready__image blue-granit">
+                          <img src="img/products/blue-granit.png" alt="blue-granit">
                         </div>
-
-                        <div class="ready__info-right">
-                          <div class="ready__right-title">Выбрать Чашу</div>
-
-                          <div class="ready__colors">
-                            <label class="ready__product" for="blue-standart">
-                              <div class="ready__product-type ready__product-type--blue"></div>
-                              <div class="ready__product-name">голубая</div>
-                            </label>
-                            <label class="ready__product" for="white-standart">
-                              <div class="ready__product-type ready__product-type--white"></div>
-                              <div class="ready__product-name">белая</div>
-                            </label>
-                            <label class="ready__product" for="grey-standart">
-                              <div class="ready__product-type ready__product-type--grey"></div>
-                              <div class="ready__product-name">серая</div>
-                            </label>
-                          </div>
-
-                          <div class="ready__materials">
-                            <label class="ready__product" for="palisandr-standart">
-                              <div class="ready__product-type ready__product-type--pasilandr">
-                                <picture>
-                                  <source type='image/webp' srcset='img/ready/palisandr.webp'>
-                                  <img class='ready__product-img' width='100' height='100' src='img/ready/palisandr.png' alt='Палисандр'>
-                                </picture>
-                              </div>
-                              <div class="ready__product-name">палисандр</div>
-                            </label>
-
-                            <label class="ready__product" for="list-standart">
-                              <div class="ready__product-type ready__product-type--list">
-                                <picture>
-                                  <source type='image/webp' srcset='img/ready/list.webp'>
-                                  <img class='ready__product-img' width='100' height='100' src='img/ready/list.png' alt='Лиственница'>
-                                </picture>
-                              </div>
-                              <div class="ready__product-name">лиственница</div>
-                            </label>
-
-                            <label class="ready__product" for="wood-standart">
-                              <div class="ready__product-type ready__product-type--white-three">
-                                <picture>
-                                  <source type='image/webp' srcset='img/ready/white-three.webp'>
-                                  <img class='ready__product-img' width='100' height='100' src='img/ready/white-three.png' alt='Белое дерево'>
-                                </picture>
-                              </div>
-                              <div class="ready__product-name">белое дерево</div>
-                            </label>
-
-                            <label class="ready__product" for="granit-standart">
-                              <div class="ready__product-type ready__product-type--granit">
-                                <picture>
-                                  <source type='image/webp' srcset='img/ready/granit.webp'>
-                                  <img class='ready__product-img' width='100' height='100' src='img/ready/granit.png' alt='Гранит'>
-                                </picture>
-                              </div>
-                              <div class="ready__product-name">гранит</div>
-                            </label>
-                          </div>
-
-                          <button class="ready__continue btn">Продолжить</button>
+                        <div class="ready__image blue-list">
+                          <img src="img/products/blue-list.png" alt="blue-list">
                         </div>
-                      </form>
+                        <div class="ready__image blue-palisandr">
+                          <img src="img/products/blue-palisandr.png" alt="blue-palisandr">
+                        </div>
+                        <div class="ready__image blue-wood">
+                          <img src="img/products/blue-wood.png" alt="blue-wood">
+                        </div>
+                        <div class="ready__image grey-granit">
+                          <img src="img/products/grey-granit.png" alt="grey-granit">
+                        </div>
+                        <div class="ready__image grey-list">
+                          <img src="img/products/grey-list.png" alt="grey-list">
+                        </div>
+                        <div class="ready__image grey-palisandr">
+                          <img src="img/products/grey-palisandr.png" alt="grey-palisandr">
+                        </div>
+                        <div class="ready__image grey-wood">
+                          <img src="img/products/grey-wood.png" alt="grey-wood">
+                        </div>
+                        <div class="ready__image white-granit">
+                          <img src="img/products/white-granit.png" alt="white-granit">
+                        </div>
+                        <div class="ready__image white-list">
+                          <img src="img/products/white-list.png" alt="white-list">
+                        </div>
+                        <div class="ready__image white-palisandr">
+                          <img src="img/products/white-palisandr.png" alt="white-palisandr">
+                        </div>
+                        <div class="ready__image white-wood">
+                          <img src="img/products/white-wood.png" alt="white-wood">
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="swiper-slide">
-                    <div class="ready__slider-content">
-                      <div class="ready__price btn">179.000₽</div>
-                      <form class="ready__info">
-                        <input class="ready__item-radio radio-1" name="colors" id="blue-premium" type="radio">
-                        <input class="ready__item-radio radio-2" name="colors" id="white-premium" type="radio" checked>
-                        <input class="ready__item-radio radio-3" name="colors" id="grey-premium" type="radio">
-                        <input class="ready__item-radio radio-4" name="material" id="palisandr-premium" type="radio">
-                        <input class="ready__item-radio radio-5" name="material" id="list-premium" type="radio" checked>
-                        <input class="ready__item-radio radio-6" name="material" id="wood-premium" type="radio">
-                        <input class="ready__item-radio radio-7" name="material" id="granit-premium" type="radio">
+                  <div class="ready__info-right">
+                    <div class="ready__right-title">Выбрать Чашу</div>
 
-                        <div class="ready__info-left">
-                          <div class="ready__info-details">
-                            <div class="ready__info-title">Серия Премиум</div>
-                            <p class="ready__info-descr">Ничего лишнего. Только самые необходимые компоненты в комплектации:<br> Печь, Купель с обшивкой из лиственницы, крышка-тент, лесенка</p>
-                          </div>
-
-                          <div class="ready__item-image">
-                            <div class="ready__image-box">
-                              <div class="ready__image">
-                                <img src="img/products/blue-granit.png" alt="blue-granit">
-                              </div>
-                              <!-- <div class="ready__image">
-                                <img src="img/products/blue-list.png" alt="blue-list">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/blue-palisandr.png" alt="blue-palisandr">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/blue-wood.png" alt="blue-wood">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/grey-granit.png" alt="grey-granit">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/grey-list.png" alt="grey-list">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/grey-palisandr.png" alt="grey-palisandr">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/grey-wood.png" alt="grey-wood">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/white-granit.png" alt="white-granit">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/white-list.png" alt="white-list">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/white-palisandr.png" alt="white-palisandr">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/white-wood.png" alt="white-wood">
-                              </div> -->
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="ready__info-right">
-                          <div class="ready__right-title">Выбрать Чашу</div>
-
-                          <div class="ready__colors">
-                            <label class="ready__product" for="blue-premium">
-                              <div class="ready__product-type ready__product-type--blue"></div>
-                              <div class="ready__product-name">голубая</div>
-                            </label>
-                            <label class="ready__product" for="white-premium">
-                              <div class="ready__product-type ready__product-type--white"></div>
-                              <div class="ready__product-name">белая</div>
-                            </label>
-                            <label class="ready__product" for="grey-premium">
-                              <div class="ready__product-type ready__product-type--grey"></div>
-                              <div class="ready__product-name">серая</div>
-                            </label>
-                          </div>
-
-                          <div class="ready__materials">
-                            <label class="ready__product" for="palisandr-premium">
-                              <div class="ready__product-type ready__product-type--pasilandr">
-                                <picture>
-                                  <source type='image/webp' srcset='img/ready/palisandr.webp'>
-                                  <img class='ready__product-img' width='100' height='100' src='img/ready/palisandr.png' alt='Палисандр'>
-                                </picture>
-                              </div>
-                              <div class="ready__product-name">палисандр</div>
-                            </label>
-
-                            <label class="ready__product" for="list-premium">
-                              <div class="ready__product-type ready__product-type--list">
-                                <picture>
-                                  <source type='image/webp' srcset='img/ready/list.webp'>
-                                  <img class='ready__product-img' width='100' height='100' src='img/ready/list.png' alt='Лиственница'>
-                                </picture>
-                              </div>
-                              <div class="ready__product-name">лиственница</div>
-                            </label>
-
-                            <label class="ready__product" for="wood-premium">
-                              <div class="ready__product-type ready__product-type--white-three">
-                                <picture>
-                                  <source type='image/webp' srcset='img/ready/white-three.webp'>
-                                  <img class='ready__product-img' width='100' height='100' src='img/ready/white-three.png' alt='Белое дерево'>
-                                </picture>
-                              </div>
-                              <div class="ready__product-name">белое дерево</div>
-                            </label>
-
-                            <label class="ready__product" for="granit-premium">
-                              <div class="ready__product-type ready__product-type--granit">
-                                <picture>
-                                  <source type='image/webp' srcset='img/ready/granit.webp'>
-                                  <img class='ready__product-img' width='100' height='100' src='img/ready/granit.png' alt='Гранит'>
-                                </picture>
-                              </div>
-                              <div class="ready__product-name">гранит</div>
-                            </label>
-                          </div>
-
-                          <button class="ready__continue btn">Продолжить</button>
-                        </div>
-                      </form>
+                    <div class="ready__colors">
+                      <label class="ready__product" for="blue-standart">
+                        <div class="ready__product-type ready__product-type--blue"></div>
+                        <div class="ready__product-name">голубая</div>
+                      </label>
+                      <label class="ready__product" for="white-standart">
+                        <div class="ready__product-type ready__product-type--white"></div>
+                        <div class="ready__product-name">белая</div>
+                      </label>
+                      <label class="ready__product" for="grey-standart">
+                        <div class="ready__product-type ready__product-type--grey"></div>
+                        <div class="ready__product-name">серая</div>
+                      </label>
                     </div>
-                  </div>
 
-                  <div class="swiper-slide">
-                    <div class="ready__slider-content">
-                      <div class="ready__price btn">229.000₽</div>
-                      <form class="ready__info">
-                        <input class="ready__item-radio radio-1" name="colors" id="blue-lux" type="radio">
-                        <input class="ready__item-radio radio-2" name="colors" id="white-lux" type="radio" checked>
-                        <input class="ready__item-radio radio-3" name="colors" id="grey-lux" type="radio">
-                        <input class="ready__item-radio radio-4" name="material" id="palisandr-lux" type="radio">
-                        <input class="ready__item-radio radio-5" name="material" id="list-lux" type="radio" checked>
-                        <input class="ready__item-radio radio-6" name="material" id="wood-lux" type="radio">
-                        <input class="ready__item-radio radio-7" name="material" id="granit-lux" type="radio">
-
-                        <div class="ready__info-left">
-                          <div class="ready__info-details">
-                            <div class="ready__info-title">Серия Люкс</div>
-                            <p class="ready__info-descr">Ничего лишнего. Только самые необходимые компоненты в комплектации:<br> Печь, Купель с обшивкой из лиственницы, крышка-тент, лесенка</p>
-                          </div>
-
-                          <div class="ready__item-image">
-                            <div class="ready__image-box">
-                              <div class="ready__image">
-                                <img src="img/products/blue-granit.png" alt="blue-granit">
-                              </div>
-                              <!-- <div class="ready__image">
-                                <img src="img/products/blue-list.png" alt="blue-list">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/blue-palisandr.png" alt="blue-palisandr">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/blue-wood.png" alt="blue-wood">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/grey-granit.png" alt="grey-granit">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/grey-list.png" alt="grey-list">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/grey-palisandr.png" alt="grey-palisandr">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/grey-wood.png" alt="grey-wood">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/white-granit.png" alt="white-granit">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/white-list.png" alt="white-list">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/white-palisandr.png" alt="white-palisandr">
-                              </div>
-                              <div class="ready__image">
-                                <img src="img/products/white-wood.png" alt="white-wood">
-                              </div> -->
-                            </div>
-                          </div>
+                    <div class="ready__materials">
+                      <label class="ready__product" for="palisandr-standart">
+                        <div class="ready__product-type ready__product-type--pasilandr">
+                          <picture>
+                            <source type='image/webp' srcset='img/ready/palisandr.webp'>
+                            <img class='ready__product-img' width='100' height='100' src='img/ready/palisandr.png' alt='Палисандр'>
+                          </picture>
                         </div>
+                        <div class="ready__product-name">палисандр</div>
+                      </label>
 
-                        <div class="ready__info-right">
-                          <div class="ready__right-title">Выбрать Чашу</div>
-
-                          <div class="ready__colors">
-                            <label class="ready__product" for="blue-lux">
-                              <div class="ready__product-type ready__product-type--blue"></div>
-                              <div class="ready__product-name">голубая</div>
-                            </label>
-                            <label class="ready__product" for="white-lux">
-                              <div class="ready__product-type ready__product-type--white"></div>
-                              <div class="ready__product-name">белая</div>
-                            </label>
-                            <label class="ready__product" for="grey-lux">
-                              <div class="ready__product-type ready__product-type--grey"></div>
-                              <div class="ready__product-name">серая</div>
-                            </label>
-                          </div>
-
-                          <div class="ready__materials">
-                            <label class="ready__product" for="palisandr-lux">
-                              <div class="ready__product-type ready__product-type--pasilandr">
-                                <picture>
-                                  <source type='image/webp' srcset='img/ready/palisandr.webp'>
-                                  <img class='ready__product-img' width='100' height='100' src='img/ready/palisandr.png' alt='Палисандр'>
-                                </picture>
-                              </div>
-                              <div class="ready__product-name">палисандр</div>
-                            </label>
-
-                            <label class="ready__product" for="list-lux">
-                              <div class="ready__product-type ready__product-type--list">
-                                <picture>
-                                  <source type='image/webp' srcset='img/ready/list.webp'>
-                                  <img class='ready__product-img' width='100' height='100' src='img/ready/list.png' alt='Лиственница'>
-                                </picture>
-                              </div>
-                              <div class="ready__product-name">лиственница</div>
-                            </label>
-
-                            <label class="ready__product" for="wood-lux">
-                              <div class="ready__product-type ready__product-type--white-three">
-                                <picture>
-                                  <source type='image/webp' srcset='img/ready/white-three.webp'>
-                                  <img class='ready__product-img' width='100' height='100' src='img/ready/white-three.png' alt='Белое дерево'>
-                                </picture>
-                              </div>
-                              <div class="ready__product-name">белое дерево</div>
-                            </label>
-
-                            <label class="ready__product" for="granit-lux">
-                              <div class="ready__product-type ready__product-type--granit">
-                                <picture>
-                                  <source type='image/webp' srcset='img/ready/granit.webp'>
-                                  <img class='ready__product-img' width='100' height='100' src='img/ready/granit.png' alt='Гранит'>
-                                </picture>
-                              </div>
-                              <div class="ready__product-name">гранит</div>
-                            </label>
-                          </div>
-
-                          <button class="ready__continue btn">Продолжить</button>
+                      <label class="ready__product" for="list-standart">
+                        <div class="ready__product-type ready__product-type--list">
+                          <picture>
+                            <source type='image/webp' srcset='img/ready/list.webp'>
+                            <img class='ready__product-img' width='100' height='100' src='img/ready/list.png' alt='Лиственница'>
+                          </picture>
                         </div>
-                      </form>
+                        <div class="ready__product-name">лиственница</div>
+                      </label>
+
+                      <label class="ready__product" for="wood-standart">
+                        <div class="ready__product-type ready__product-type--white-three">
+                          <picture>
+                            <source type='image/webp' srcset='img/ready/white-three.webp'>
+                            <img class='ready__product-img' width='100' height='100' src='img/ready/white-three.png' alt='Белое дерево'>
+                          </picture>
+                        </div>
+                        <div class="ready__product-name">белое дерево</div>
+                      </label>
+
+                      <label class="ready__product" for="granit-standart">
+                        <div class="ready__product-type ready__product-type--granit">
+                          <picture>
+                            <source type='image/webp' srcset='img/ready/granit.webp'>
+                            <img class='ready__product-img' width='100' height='100' src='img/ready/granit.png' alt='Гранит'>
+                          </picture>
+                        </div>
+                        <div class="ready__product-name">гранит</div>
+                      </label>
                     </div>
+
+                    <button class="ready__continue btn">Продолжить</button>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="ready__tabs__content tabs__content" data-tabs-target="premium">
+              <div class="ready__slider-content">
+                <div class="ready__price btn">179.000₽</div>
+                <form class="ready__info">
+                  <input class="ready__radio-color radio-1" name="colors" id="blue-premium" type="radio">
+                  <input class="ready__radio-color  radio-2" name="colors" id="white-premium" type="radio" checked>
+                  <input class="ready__radio-color  radio-3" name="colors" id="grey-premium" type="radio">
+                  <input class="ready__radio-material radio-4" name="material" id="palisandr-premium" type="radio">
+                  <input class="ready__radio-material radio-5" name="material" id="list-premium" type="radio">
+                  <input class="ready__radio-material radio-6" name="material" id="wood-premium" type="radio" checked>
+                  <input class="ready__radio-material radio-7" name="material" id="granit-premium" type="radio">
+
+                  <div class="ready__info-left">
+                    <div class="ready__info-details">
+                      <div class="ready__info-title">Серия Премиум</div>
+                      <p class="ready__info-descr">Отличный вариант для ценнителей романтично отдохнуть вечером. <br> В комплектации:<br> Печь, Купель с обшивкой из лиственницы, крышка-тент, лесенка
+                        <br>
+                        <span>+ Подсветка чаши купели + Подстаканники <br> + Защитный кожух на трубу печки</span></p>
+                    </div>
+
+                    <div class="ready__item-image">
+                      <div class="ready__image-box">
+                        <div class="ready__image">
+                          <img src="img/products/blue-granit.png" alt="blue-granit">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/blue-list.png" alt="blue-list">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/blue-palisandr.png" alt="blue-palisandr">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/blue-wood.png" alt="blue-wood">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/grey-granit.png" alt="grey-granit">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/grey-list.png" alt="grey-list">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/grey-palisandr.png" alt="grey-palisandr">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/grey-wood.png" alt="grey-wood">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/white-granit.png" alt="white-granit">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/white-list.png" alt="white-list">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/white-palisandr.png" alt="white-palisandr">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/white-wood.png" alt="white-wood">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="ready__info-right">
+                    <div class="ready__right-title">Выбрать Чашу</div>
+
+                    <div class="ready__colors">
+                      <label class="ready__product" for="blue-premium">
+                        <div class="ready__product-type ready__product-type--blue"></div>
+                        <div class="ready__product-name">голубая</div>
+                      </label>
+                      <label class="ready__product" for="white-premium">
+                        <div class="ready__product-type ready__product-type--white"></div>
+                        <div class="ready__product-name">белая</div>
+                      </label>
+                      <label class="ready__product" for="grey-premium">
+                        <div class="ready__product-type ready__product-type--grey"></div>
+                        <div class="ready__product-name">серая</div>
+                      </label>
+                    </div>
+
+                    <div class="ready__materials">
+                      <label class="ready__product" for="palisandr-premium">
+                        <div class="ready__product-type ready__product-type--pasilandr">
+                          <picture>
+                            <source type='image/webp' srcset='img/ready/palisandr.webp'>
+                            <img class='ready__product-img' width='100' height='100' src='img/ready/palisandr.png' alt='Палисандр'>
+                          </picture>
+                        </div>
+                        <div class="ready__product-name">палисандр</div>
+                      </label>
+
+                      <label class="ready__product" for="list-premium">
+                        <div class="ready__product-type ready__product-type--list">
+                          <picture>
+                            <source type='image/webp' srcset='img/ready/list.webp'>
+                            <img class='ready__product-img' width='100' height='100' src='img/ready/list.png' alt='Лиственница'>
+                          </picture>
+                        </div>
+                        <div class="ready__product-name">лиственница</div>
+                      </label>
+
+                      <label class="ready__product" for="wood-premium">
+                        <div class="ready__product-type ready__product-type--white-three">
+                          <picture>
+                            <source type='image/webp' srcset='img/ready/white-three.webp'>
+                            <img class='ready__product-img' width='100' height='100' src='img/ready/white-three.png' alt='Белое дерево'>
+                          </picture>
+                        </div>
+                        <div class="ready__product-name">белое дерево</div>
+                      </label>
+
+                      <label class="ready__product" for="granit-premium">
+                        <div class="ready__product-type ready__product-type--granit">
+                          <picture>
+                            <source type='image/webp' srcset='img/ready/granit.webp'>
+                            <img class='ready__product-img' width='100' height='100' src='img/ready/granit.png' alt='Гранит'>
+                          </picture>
+                        </div>
+                        <div class="ready__product-name">гранит</div>
+                      </label>
+                    </div>
+
+                    <button class="ready__continue btn">Продолжить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="ready__tabs__content tabs__content" data-tabs-target="lux">
+              <div class="ready__slider-content">
+                <div class="ready__price btn">229.000₽</div>
+                <form class="ready__info">
+                  <input class="ready__radio-color radio-1" name="colors" id="blue-lux" type="radio">
+                  <input class="ready__radio-color  radio-2" name="colors" id="white-lux" type="radio" checked>
+                  <input class="ready__radio-color  radio-3" name="colors" id="grey-lux" type="radio">
+                  <input class="ready__radio-material radio-4" name="material" id="palisandr-lux" type="radio">
+                  <input class="ready__radio-material radio-5" name="material" id="list-lux" type="radio">
+                  <input class="ready__radio-material radio-6" name="material" id="wood-lux" type="radio" checked>
+                  <input class="ready__radio-material radio-7" name="material" id="granit-lux" type="radio">
+
+                  <div class="ready__info-left">
+                    <div class="ready__info-details">
+                      <div class="ready__info-title">Серия Люкс</div>
+                      <p class="ready__info-descr">Есть все и даже больше. <br> В комплектации:<br> Печь, Купель с обшивкой из лиственницы, крышка-тент, лесенка
+                        <br>
+                        <span>+Аэромассаж + Подсветка чаши купели + Подстаканники <br> + Защитный кожух на трубу печки</span></p>
+                    </div>
+
+                    <div class="ready__item-image">
+                      <div class="ready__image-box">
+                        <div class="ready__image">
+                          <img src="img/products/blue-granit.png" alt="blue-granit">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/blue-list.png" alt="blue-list">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/blue-palisandr.png" alt="blue-palisandr">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/blue-wood.png" alt="blue-wood">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/grey-granit.png" alt="grey-granit">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/grey-list.png" alt="grey-list">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/grey-palisandr.png" alt="grey-palisandr">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/grey-wood.png" alt="grey-wood">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/white-granit.png" alt="white-granit">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/white-list.png" alt="white-list">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/white-palisandr.png" alt="white-palisandr">
+                        </div>
+                        <div class="ready__image">
+                          <img src="img/products/white-wood.png" alt="white-wood">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="ready__info-right">
+                    <div class="ready__right-title">Выбрать Чашу</div>
+
+                    <div class="ready__colors">
+                      <label class="ready__product" for="blue-lux">
+                        <div class="ready__product-type ready__product-type--blue"></div>
+                        <div class="ready__product-name">голубая</div>
+                      </label>
+                      <label class="ready__product" for="white-lux">
+                        <div class="ready__product-type ready__product-type--white"></div>
+                        <div class="ready__product-name">белая</div>
+                      </label>
+                      <label class="ready__product" for="grey-lux">
+                        <div class="ready__product-type ready__product-type--grey"></div>
+                        <div class="ready__product-name">серая</div>
+                      </label>
+                    </div>
+
+                    <div class="ready__materials">
+                      <label class="ready__product" for="palisandr-lux">
+                        <div class="ready__product-type ready__product-type--pasilandr">
+                          <picture>
+                            <source type='image/webp' srcset='img/ready/palisandr.webp'>
+                            <img class='ready__product-img' width='100' height='100' src='img/ready/palisandr.png' alt='Палисандр'>
+                          </picture>
+                        </div>
+                        <div class="ready__product-name">палисандр</div>
+                      </label>
+
+                      <label class="ready__product" for="list-lux">
+                        <div class="ready__product-type ready__product-type--list">
+                          <picture>
+                            <source type='image/webp' srcset='img/ready/list.webp'>
+                            <img class='ready__product-img' width='100' height='100' src='img/ready/list.png' alt='Лиственница'>
+                          </picture>
+                        </div>
+                        <div class="ready__product-name">лиственница</div>
+                      </label>
+
+                      <label class="ready__product" for="wood-lux">
+                        <div class="ready__product-type ready__product-type--white-three">
+                          <picture>
+                            <source type='image/webp' srcset='img/ready/white-three.webp'>
+                            <img class='ready__product-img' width='100' height='100' src='img/ready/white-three.png' alt='Белое дерево'>
+                          </picture>
+                        </div>
+                        <div class="ready__product-name">белое дерево</div>
+                      </label>
+
+                      <label class="ready__product" for="granit-lux">
+                        <div class="ready__product-type ready__product-type--granit">
+                          <picture>
+                            <source type='image/webp' srcset='img/ready/granit.webp'>
+                            <img class='ready__product-img' width='100' height='100' src='img/ready/granit.png' alt='Гранит'>
+                          </picture>
+                        </div>
+                        <div class="ready__product-name">гранит</div>
+                      </label>
+                    </div>
+
+                    <button class="ready__continue btn">Продолжить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <button class="tabs__arrow tabs__arrow--prev" aria-label="Назад"></button>
+            <button class="tabs__arrow tabs__arrow--next" aria-label="Вперед"></button>
           </div>
         </div>
-
       </section>
 
       <section class="collect">

@@ -11,6 +11,7 @@
     border-radius: 36px;
     box-shadow: 16px 18px 10px 4px rgba(58, 59, 61, 0.9);
     padding: 25px 75px 45px 85px;
+    position: relative;
   }
 
   &__cancel {
@@ -23,18 +24,16 @@
 
   &__items {
     margin-top: 27px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 46px;
   }
 
   &__item {
     width: 302px;
     min-height: 97px;
-    margin-bottom: 45px;
     background: linear-gradient(124.39deg, #FDFDFD -10.77%, #E9E9E9 142.5%);
     box-shadow: -6px -6px 8px rgba(248, 248, 248, 0.5), 7px 6px 15px rgba(0, 0, 0, 0.13);
-    // border: 5px solid #e9e9e9;
     border-radius: 6px;
     position: relative;
     padding: 8px;
@@ -43,7 +42,6 @@
 
     &.active {
       border: 5px solid #8EC5FC;
-      // border-image-source: linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%);
     }
   }
 
@@ -68,6 +66,7 @@
   }
 
   &__btns {
+    margin-top: 45px;
     width: 100%;
     display: flex;
     justify-content: space-between;
